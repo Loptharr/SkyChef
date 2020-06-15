@@ -8,92 +8,73 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
-    <script>$(function () {
-            $("#accordion").accordion();
-        });</script>
-    <script>$(function () {
-            $("#dialog").dialog({
-                autoOpen: false,
-                show: {
-                    duration: 100
-                },
-                hide: {
-                    duration: 100
-                }
-            });
-
-            $("#opener").on("click", function () {
-                $("#dialog").dialog("open");
-            });
-        });</script>
-    <style>
-
-        #resizable {
-            width: 150px;
-            height: 150px;
-            padding: 0.5em;
-        }
-    </style>
-    <script>$(function () {
-            $("#resizable").resizable();
-        });</script>
+    
+    
     <body>
 
-        <div id="resizable" class="ui-widget-content">
-            <h3 class="ui-widget-header">TITULO</h3>
+        <div class="cod-container">
+            <div class="form-header">
+                <img src="img/logo.jpg" alt="Logo de CodigoMasters">
+                <h1><span>SKY CHEF</span></h1>
+            </div>
+    
+            <div class="form-content">
+                <form action="#" class="cod-form">
+                    <div class="form-title">
+                        <h3>Iniciar Sesión</h3>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="email" class="form-input" name="form-input" id="correo">
+                        <label class="label" for="correo">Correo</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="password" class="form-input" name="form-input" id="pass">
+                        <label class="label" for="pass">Contraseña</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="submit" class="form-input" value="Iniciar Sesión">
+                        <p>No tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                    </div>
+                   
+                </form>
+            </div>
+    
+            
+            <div class="form-content">
+                <form action="#" class="cod-form">
+                    <div class="form-title">
+                        <h3>Regístrate Gratis</h3>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="email" class="form-input" name="form-input" id="reg-correo">
+                        <label class="label" for="reg-correo">Correo</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="password" class="form-input" name="form-input" id="reg-pass">
+                        <label class="label" for="reg-pass">Contraseña</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="password" class="form-input" name="form-input" id="reg-rep-pass">
+                        <label class="label" for="reg-rep-pass">Repetir Contraseña</label>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="submit" class="form-input" value="Registrate">
+                        <p>Ya tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                    </div>
+                   
+                </form>
+            </div>
         </div>
-        <div id="accordion">
-            <h3>Section 1</h3>
-            <div>
-                <p>
-                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                </p>
-            </div>
-            <h3>Section 2</h3>
-            <div>
-                <p>
-                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                    suscipit faucibus urna.
-                </p>
-            </div>
-            <h3>Section 3</h3>
-            <div>
-                <p>
-                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                </p>
-            </div>
-            <h3>Section 4</h3>
-            <div>
-                <p>
-                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                    mauris vel est.
-                </p>
-            </div>
-            <h3>Section 5</h3>
-            <div>
-                <p>
-                    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                    mauris vel est.
-                </p>
-            </div>
-        </div>
-
-        <div id="dialog" title="Basic dialog">
-            <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-        </div>
-        <button style="align-content:safe center" id="opener">Final</button>
+    
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/form.js"></script>
 
     </body>
 </html>
