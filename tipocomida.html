@@ -1,18 +1,58 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipo de Comida</title>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#dialog").dialog({
+                autoOpen: false,
+                show: {
+                    duration: 100
+                },
+                hide: {
+                    duration: 100
+                }
+            });
+
+            $("#opener").on("click", function() {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
 </head>
+
 <body>
+
     <h1>Escoge el tipo de comida que prefieres</h1>
     <p>SkyChef presenta para ti varios tipos de opciones para que puedas escoger cual se adapta a tu perfil, toma el que quieras.</p>
-<h2>Menú Regular</h2>
-<p>Contiene alimentos, nutritivos y ricos sin ningun tipo de restricciones.</p>
-<button><img src="img/regular.png" alt="" width="250"></button>
-<h2>Menú Vegano</h2>
-<p>Para las personas que comen verde esta es tu opción para escoger lo mejor para ti.</p>
-<button><img src="img/vegano.png" alt="" width="250"></button>
+    <div id="accordion">
+        <h3><img src="img/regular.png" height=35px> Menú Regular</h3>
+        <div>
+            <p>
+                Contiene alimentos, nutritivos y ricos sin ningun tipo de restricciones.
+            </p>
+            <button><img src="img/regular.png" alt="" width="250"></button>
+        </div>
+        <h3><img src="img/vegano.png" height=35px> Menú Vegano</h3>
+        <div>
+            <p>
+                Para las personas que comen verde esta es tu opción para escoger lo mejor para ti.
+            </p>
+            <button><img src="img/vegano.png" alt="" width="250"></button>
+        </div>
+    </div>
 </body>
+
 </html>
