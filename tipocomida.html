@@ -5,53 +5,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipo de Comida</title>
+    <style type="text/css">
+        div#tipocomida {
+            text-align: center;
+            margin-top: 0cm;
+            width: 950px;
+            align-content: center;
+        }
+        
+        div#regular {
+            float: left;
+            width: 450px;
+            margin-left: 5px;
+            height: 260px;
+            padding: 5px;
+            border-width: thin;
+            border-style: solid;
+            text-align: center;
+        }
+        
+        div#vegano {
+            float: left;
+            width: 450px;
+            margin-left: 35px;
+            height: 260px;
+            padding: 5px;
+            border-width: thin;
+            border-style: solid;
+            text-align: center;
+        }
+    </style>
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function() {
-            $("#accordion").accordion();
-        });
-    </script>
-    <script>
-        $(function() {
-            $("#dialog").dialog({
-                autoOpen: false,
-                show: {
-                    duration: 100
-                },
-                hide: {
-                    duration: 100
-                }
-            });
-
-            $("#opener").on("click", function() {
-                $("#dialog").dialog("open");
-            });
-        });
-    </script>
+    <script type=""></script>
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container-main">
+            <div class="logo">
+                <a href="Index.html">
+                    <img src="img/logo.jpg">
+                </a>
+            </div>
 
-    <h1>Escoge el tipo de comida que prefieres</h1>
-    <p>SkyChef presenta para ti varios tipos de opciones para que puedas escoger cual se adapta a tu perfil, toma el que quieras.</p>
-    <div id="accordion">
-        <h3><img src="img/regular.png" height=35px> Menú Regular</h3>
-        <div>
-            <p>
-                Contiene alimentos, nutritivos y ricos sin ningun tipo de restricciones.
-            </p>
-            <button><img src="img/regular.png" alt="" width="250"></button>
+            <div class="currentDetails">
+                <div class="header-option">
+                    <a href="tipocomida.html">
+                        <button class="options-btn">Select Menu</button>
+                    </a>
+                </div>
+                <div class="header-option">
+                    <a href="somos.html">
+                        <button class="options-btn">Quienes somos</button>
+                    </a>
+                </div>
+                <div class="header-option">
+                    <div class="container">
+
+                        <button class="options-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3><img src="img/vegano.png" height=35px> Menú Vegano</h3>
-        <div>
-            <p>
-                Para las personas que comen verde esta es tu opción para escoger lo mejor para ti.
-            </p>
-            <button><img src="img/vegano.png" alt="" width="250"></button>
+
+    </header>
+    <div class="tipocomida">
+        <h1>Escoge el tipo de comida que prefieres</h1>
+        <p>SkyChef presenta para ti varios tipos de opciones para que puedas escoger cual se adapta a tu perfil, toma el que quieras.</p>
+        <div class="vegano">
+            <div>
+                <h3>Menú Regular</h3>
+                <br>
+                <p>
+                    Contiene alimentos, nutritivos y ricos, con la mejor calidad que nos caraceriza sin restricciones.
+                </p>
+
+                <a href="menureg.html">
+                    <button><img src="img/regular.png" alt="" width="250"></button>
+                </a>
+            </div>
+
         </div>
+
+        <div class="vegano">
+            <div>
+                <h3>Menú Vegano</h3>
+                <br>
+                <p>
+                    Para las personas que comen verde esta es tu opción para escoger lo mejor para ti.
+                </p>
+                <a href="menuveg.html">
+                    <button><img src="img/vegano.png" alt="" width="250"></button>
+                </a>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
