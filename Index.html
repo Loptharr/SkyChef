@@ -43,6 +43,38 @@
             $("#resizable").resizable();
         });
     </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
     <body>
 
@@ -89,11 +121,13 @@
             <h3 class=".accordion-titulo">IDEA DEL PROYECTO</h3>
             <div class="accordion-content">
                 <p>
-                    No hay forma de evitarlo a veces viajar es simplemente incómodo y frustrante. Desde pequeños asientos de avión hasta desagradables retrasos en los vuelos, soportamos mucho para llegar a nuestro destino final. Dicho esto, hay algunas aerolíneas que siempre parecen hacer que el viaje sea un poco peor. 
+                    No hay forma de evitarlo a veces viajar es simplemente incómodo y frustrante. Desde pequeños asientos de avión hasta desagradables retrasos en los vuelos, soportamos mucho para llegar a nuestro destino final. Dicho esto, hay algunas aerolíneas que siempre
+                    parecen hacer que el viaje sea un poco peor.
                 </p>
                 <br>
                 <p>
-                    Este proyecto fue creado con la idea que viene de un vacio que hay en la relación pasajero y aerolínea, existen multiples quejas con respecto al servicio de catering, muchas veces con comidas no deseadas, o no alcanzando lo que se desea seleccioner. Por esta razón nace SkyCheff, para dar una alternativa al pasajero de escoger lo que quieran,  de esta manera la aerolinea preaprarse y tener exactamente lo solicitado para no desperdiciar comida y recursos.
+                    Este proyecto fue creado con la idea que viene de un vacio que hay en la relación pasajero y aerolínea, existen multiples quejas con respecto al servicio de catering, muchas veces con comidas no deseadas, o no alcanzando lo que se desea seleccioner. Por
+                    esta razón nace SkyCheff, para dar una alternativa al pasajero de escoger lo que quieran, de esta manera la aerolinea preaprarse y tener exactamente lo solicitado para no desperdiciar comida y recursos.
                 </p>
             </div>
             <h3>OBJETIVO GENERAL</h3>
@@ -105,16 +139,62 @@
             <h3>OBJETIVO ESPECIFICO</h3>
             <div class="accordion-content">
                 <p>
-                    <ol> 
-                        <li>Entregar comida con excelente sabor y de calidad. 
-                        <li>Prestar un servicio puntual y exacto.
-                        <li>Ser la empresa pionera en el servicio de catering aereo. 
-                        <li>Contar con una buena experiencia para el cliente.
-                        <li>Ser pionerasen ofrecer catering con elección de plato en vuelo.
-                        <li>Ofrecer una página alta tecnología que sea de fácil acceso al cliente.
+                    <ol>
+                        <li>Entregar comida con excelente sabor y de calidad.
+                            <li>Prestar un servicio puntual y exacto.
+                                <li>Ser la empresa pionera en el servicio de catering aereo.
+                                    <li>Contar con una buena experiencia para el cliente.
+                                        <li>Ser pionerasen ofrecer catering con elección de plato en vuelo.
+                                            <li>Ofrecer una página alta tecnología que sea de fácil acceso al cliente.
                     </ol>
                 </p>
             </div>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/avion1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/avion2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/avion3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/avion4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/avion5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/avion6.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
     </body>
 

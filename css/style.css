@@ -67,13 +67,17 @@ div#entrada {
     align-content: center;
 }
 
+.containerTodo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .vegano {
     border: #2c3e50 1px;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5rem;
+    margin-top: 20px;
     text-align: center;
     padding: 0.7rem;
     border-radius: 30px;
@@ -401,6 +405,7 @@ div.parrafoMenu {
 /* Slideshow container */
 
 .slideshow-container {
+    padding-top: 1cm;
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -499,6 +504,42 @@ div.parrafoMenu {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+.wrapper {
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.wrapper div {
+    min-height: 200px;
+    padding: 10px;
+}
+
+#one {
+    background-color: gray;
+    float: left;
+    margin-right: 20px;
+    width: 140px;
+    border-right: 2px solid #000;
+}
+
+#two {
+    background-color: white;
+    overflow: hidden;
+    margin: 10px;
+    border: 2px dashed #ccc;
+    min-height: 170px;
+}
+
+@media screen and (max-width: 400px) {
+    #one {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        border-bottom: 2px solid #000;
+    }
 }
 
 @-webkit-keyframes fade {
