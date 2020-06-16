@@ -1,212 +1,145 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Regular</title>
-    <style type="text/css">
-        div#entrada{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#entrada1{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#entrada2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#entrada3{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#principal1{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal3{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#postre1{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre3{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#botonRegular{
-            text-align: center;
-        }
-        div.tituloMenu{
-            text-align: center;
-        }
-        div.parrafoMenu{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
 </head>
+
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container-main">
+            <div class="logo">
+                <a href="Index.html">
+                    <img src="img/logo.jpg">
+                </a>
+            </div>
+
+            <div class="currentDetails">
+                <div class="header-option">
+                    <a href="tipocomida.html">
+                        <span>Select Menu</span>
+                    </a>
+                </div>
+                <div class="header-option">
+                    <a href="somos.html">
+                        <span>Quienes somos</span>
+                    </a>
+                </div>
+                <div class="login">
+                    <div class="header-option">
+                        <a href="login.html">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
     <div class="tituloMenu">
-    <h1>Menú Regular</h1>
+        <h1>Menú Regular</h1>
     </div>
     <div class="parrafoMenu">
-    <p>Escoge entre las opciones de entrada, principal y postre que deseas que te sirvan en tu vuelo</p>
+        <p>Escoge entre las opciones de entrada, principal y postre que deseas que te sirvan en tu vuelo</p>
     </div>
     <form action="">
-    <h3>Entrada</h3>
-    <p>
-    <div id="entrada">
-    <div id="entrada1">
-    <input type="checkbox">Ensalada Capresa: Rico tomate en rodajas con queso mozzarela y jamon serrano, aderezado con aceite de oliva y pan tostado
-    </p>
-    <p>
-    <img src="img/regular/entrada/ensalada.jpg" alt="10px" width="90%">
-    </p>
-    </div>
-    <p>
-    <div id="entrada2">
-    <input type="checkbox">Ensalada Coleslow: Repollo y zanahoria rallada con pasas, aderezado con mayonesa de la casa.
-    </p>
-    <p>
-    <img src="img/regular/entrada/ensalada2.jpg" alt="10px" width="90%">  
-    </p>
-    </div>
-    <p>
-    <div id="entrada3">
-    <input type="checkbox">Sopa de Pollo: Consome de pollo acompañado de papa, zanahoria, huevo y rico cilantro.
-    </p>
-    <p>
-    <img src="img/regular/entrada/sopa.jpg" alt="10px" width="90%">
-    </p>
-    </div>
-</div>
-<br>
-<h3>Principal</h3>
-<p>
-    <div id="principal">
-        <div id="principal1">
-        <input type="checkbox">Lasagna: Capas de pasta importada con salsa bologñesa de la casa, bechamel y queso parmesano.
+        <h3>Entrada</h3>
+        <p>
+            <div id="entrada">
+                <div id="entrada1">
+                    <input type="checkbox">Ensalada Capresa: Rico tomate en rodajas con queso mozzarela y jamon serrano, aderezado con aceite de oliva y pan tostado
         </p>
         <p>
-        <img src="img/regular/principal/lasagna.jpg" alt="10px" width="90%">
+            <img src="img/regular/entrada/ensalada.jpg" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="principal2">
-        <input type="checkbox">Pollo Guisado: Pechuga de pollo en cuadros con vegetales al vapor en salsa de tomate, acompañado de arroz basmati.
+            <div id="entrada2">
+                <input type="checkbox">Ensalada Coleslow: Repollo y zanahoria rallada con pasas, aderezado con mayonesa de la casa.
         </p>
         <p>
-        <img src="img/regular/principal/pollo.jpg" alt="10px" width="90%">  
+            <img src="img/regular/entrada/ensalada2.jpg" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="principal3">
-        <input type="checkbox">Salmon al limón: Salmon con piel crocante aderezado con salsa al limón, acompañado de pure de papas y esparragos.
+            <div id="entrada3">
+                <input type="checkbox">Sopa de Pollo: Consome de pollo acompañado de papa, zanahoria, huevo y rico cilantro.
         </p>
         <p>
-        <img src="img/regular/principal/salmon.jpg" alt="10px" width="90%">
+            <img src="img/regular/entrada/sopa.jpg" alt="10px" width="90%">
         </p>
         </div>
-    </div>
-<h3>Postre</h3>
-<p>
-    <div id="postre">
-        <div id="postre1">
-        <input type="checkbox">Torta de queso: Postre donde su principal ingrediente es el queso crema. Su fondo es crujiente hecho con galletas. 
-        </p>
-        <p>
-        <img src="img/regular/postre/torta.jpg" alt="10px" width="90%">
-        </p>
         </div>
+        <br>
+        <h3>Principal</h3>
         <p>
-        <div id="postre2">
-        <input type="checkbox">Volcan de Chocolate: bizcocho de sabor intenso que al ser picado deja verter chocolate derretido.
+            <div id="principal">
+                <div id="principal1">
+                    <input type="checkbox">Lasagna: Capas de pasta importada con salsa bologñesa de la casa, bechamel y queso parmesano.
         </p>
         <p>
-        <img src="img/regular/postre/volcan.jpg" alt="10px" width="90%">  
+            <img src="img/regular/principal/lasagna.jpg" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="postre3">
-        <input type="checkbox">Créme Brulée: Consiste en una crema espolvoreado con azúcar quemada convertida en crujiente de caramelo.
+            <div id="principal2">
+                <input type="checkbox">Pollo Guisado: Pechuga de pollo en cuadros con vegetales al vapor en salsa de tomate, acompañado de arroz basmati.
         </p>
         <p>
-        <img src="img/regular/postre/crem.jpg" alt="10px" width="90%">
+            <img src="img/regular/principal/pollo.jpg" alt="10px" width="90%">
         </p>
         </div>
-    </div>
-    <div id="botonRegular">
-    <button type="submit"> <a href="pedidostatus.html">Registre</a></button> 
-    <input type="reset" value="Limpiar">
-    </div>
+        <p>
+            <div id="principal3">
+                <input type="checkbox">Salmon al limón: Salmon con piel crocante aderezado con salsa al limón, acompañado de pure de papas y esparragos.
+        </p>
+        <p>
+            <img src="img/regular/principal/salmon.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        </div>
+        <h3>Postre</h3>
+        <p>
+            <div id="postre">
+                <div id="postre1">
+                    <input type="checkbox">Torta de queso: Postre donde su principal ingrediente es el queso crema. Su fondo es crujiente hecho con galletas.
+        </p>
+        <p>
+            <img src="img/regular/postre/torta.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        <p>
+            <div id="postre2">
+                <input type="checkbox">Volcan de Chocolate: bizcocho de sabor intenso que al ser picado deja verter chocolate derretido.
+        </p>
+        <p>
+            <img src="img/regular/postre/volcan.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        <p>
+            <div id="postre3">
+                <input type="checkbox">Créme Brulée: Consiste en una crema espolvoreado con azúcar quemada convertida en crujiente de caramelo.
+        </p>
+        <p>
+            <img src="img/regular/postre/crem.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        </div>
+        <div id="botonRegular">
+            <button type="submit"> <a href="pedidostatus.html">Registre</a></button>
+            <input type="reset" value="Limpiar">
+        </div>
     </form>
 
 </body>
+
 </html>

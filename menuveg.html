@@ -1,212 +1,145 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú Vegano</title>
-    <style type="text/css">
-        div#entrada_2{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#entrada1_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#entrada2_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#entrada3_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal_2{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#principal1_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal2_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#principal3_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre_2{
-            margin-top: 0cm;
-            width: 950px;
-            align-content: center;
-        }
-        div#postre1_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre2_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#postre3_2{
-            float:left;
-            width: 290px;
-            height: 260px;
-            padding: 5px;
-            border-width: thin;
-            border-style: solid;
-            text-align: center;
-        }
-        div#botonRegular_2{
-            text-align: center;
-        }
-        div.tituloMenu{
-            text-align: center;
-        }
-        div.parrafoMenu{
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+
 </head>
+
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container-main">
+            <div class="logo">
+                <a href="Index.html">
+                    <img src="img/logo.jpg">
+                </a>
+            </div>
+
+            <div class="currentDetails">
+                <div class="header-option">
+                    <a href="tipocomida.html">
+                        <span>Select Menu</span>
+                    </a>
+                </div>
+                <div class="header-option">
+                    <a href="somos.html">
+                        <span>Quienes somos</span>
+                    </a>
+                </div>
+                <div class="login">
+                    <div class="header-option">
+                        <a href="login.html">
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
     <div class="tituloMenu">
-    <h1>Menú Vegano</h1>
+        <h1>Menú Vegano</h1>
     </div>
     <div class="parrafoMenu">
-    <p>Escoge entre las opciones de entrada, principal y postre que deseas que te sirvan en tu vuelo</p>
+        <p>Escoge entre las opciones de entrada, principal y postre que deseas que te sirvan en tu vuelo</p>
     </div>
     <form action="">
-    <h3>Entrada</h3>
-    <p>
-    <div id="entrada_2">
-    <div id="entrada1_2">
-    <input type="checkbox">Ensalada Mixta: Ensalada con zanahoria, repollo, champiñones, cous cous y queso vegano, con aderezo miel mostaza.
-    </p>
-    <p>
-    <img src="img/vegano/entrada/ensalada.jpg" alt="10px" width="90%">
-    </p>
-    </div>
-    <p>
-    <div id="entrada2_2">
-    <input type="checkbox">Falafel: Ricos garbanzas triturados con finas hierbas, frito en aceite de coco y acompañado con salsa de yogurt.
-    </p>
-    <p>
-    <img src="img/vegano/entrada/falafel.jpg" alt="10px" width="90%">  
-    </p>
-    </div>
-    <p>
-    <div id="entrada3_2">
-    <input type="checkbox">Crema de Zapallo: Crema a base de caldo de veduras, papa, y zapallo, acompañado con toques de cilantro.
-    </p>
-    <p>
-    <img src="img/vegano/entrada/sopa_zapallo.jpg" alt="10px" width="90%">
-    </p>
-    </div>
-</div>
-<br>
-<h3>Principal</h3>
-<p>
-    <div id="principal_2">
-        <div id="principal1_2">
-        <input type="checkbox">Rissoto Champiñon: Arroz con champiñon, hecho con leche de almendras y queso vegano con toque de ciboullette.
+        <h3>Entrada</h3>
+        <p>
+            <div id="entrada_2">
+                <div id="entrada1_2">
+                    <input type="checkbox">Ensalada Mixta: Ensalada con zanahoria, repollo, champiñones, cous cous y queso vegano, con aderezo miel mostaza.
         </p>
         <p>
-        <img src="img/vegano/principal/risoto.png" alt="10px" width="90%">
+            <img src="img/vegano/entrada/ensalada.jpg" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="principal2_2">
-        <input type="checkbox">Burrito de Vegetales: Tortilla a base de harina de avena, con cebolla, tomate, lecugas mixtas y palta, con aderezo de yogurt.
+            <div id="entrada2_2">
+                <input type="checkbox">Falafel: Ricos garbanzas triturados con finas hierbas, frito en aceite de coco y acompañado con salsa de yogurt.
         </p>
         <p>
-        <img src="img/vegano/principal/burrito.jpg" alt="10px" width="90%">  
+            <img src="img/vegano/entrada/falafel.jpg" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="principal3_2">
-        <input type="checkbox">Pasta Vegana: Linguinis importados acompañados de cebolla, pimenton, brocoli, zapallo, con salsa de aceite de oliva y ajo.
+            <div id="entrada3_2">
+                <input type="checkbox">Crema de Zapallo: Crema a base de caldo de veduras, papa, y zapallo, acompañado con toques de cilantro.
         </p>
         <p>
-        <img src="img/vegano/principal/pasta.jpg" alt="10px" width="90%">
+            <img src="img/vegano/entrada/sopa_zapallo.jpg" alt="10px" width="90%">
         </p>
         </div>
-    </div>
-<h3>Postre</h3>
-<p>
-    <div id="postre_2">
-        <div id="postre1_2">
-        <input type="checkbox">Torta Vegana: Queque a base de harina y leche de almendra, relleno con crema de riccotta vegana y miel. 
-        </p>
-        <p>
-        <img src="img/vegano/postre/torta.jpg" alt="10px" width="90%">
-        </p>
         </div>
+        <br>
+        <h3>Principal</h3>
         <p>
-        <div id="postre2_2">
-        <input type="checkbox">Mouse de Chocolate: Hecho con leche de almendras y cacao 100% puro, endulzado con stevia.
+            <div id="principal_2">
+                <div id="principal1_2">
+                    <input type="checkbox">Rissoto Champiñon: Arroz con champiñon, hecho con leche de almendras y queso vegano con toque de ciboullette.
         </p>
         <p>
-        <img src="img/vegano/postre/mouse.jpg" alt="10px" width="90%">  
+            <img src="img/vegano/principal/risoto.png" alt="10px" width="90%">
         </p>
         </div>
         <p>
-        <div id="postre3_2">
-        <input type="checkbox">Flan: Sin huevos añadidos y realizado con leche de almendras y haria de coco, con un toque de vainilla endulzada con miel.
+            <div id="principal2_2">
+                <input type="checkbox">Burrito de Vegetales: Tortilla a base de harina de avena, con cebolla, tomate, lecugas mixtas y palta, con aderezo de yogurt.
         </p>
         <p>
-        <img src="img/vegano/postre/flan.jpg" alt="10px" width="90%">
+            <img src="img/vegano/principal/burrito.jpg" alt="10px" width="90%">
         </p>
         </div>
-    </div>
-    <div id="botonRegular_2">
-    <button type="submit"> <a href="pedidostatus.html">Registre</a></button> 
-    <input type="reset" value="Limpiar">
-    </div>
+        <p>
+            <div id="principal3_2">
+                <input type="checkbox">Pasta Vegana: Linguinis importados acompañados de cebolla, pimenton, brocoli, zapallo, con salsa de aceite de oliva y ajo.
+        </p>
+        <p>
+            <img src="img/vegano/principal/pasta.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        </div>
+        <h3>Postre</h3>
+        <p>
+            <div id="postre_2">
+                <div id="postre1_2">
+                    <input type="checkbox">Torta Vegana: Queque a base de harina y leche de almendra, relleno con crema de riccotta vegana y miel.
+        </p>
+        <p>
+            <img src="img/vegano/postre/torta.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        <p>
+            <div id="postre2_2">
+                <input type="checkbox">Mouse de Chocolate: Hecho con leche de almendras y cacao 100% puro, endulzado con stevia.
+        </p>
+        <p>
+            <img src="img/vegano/postre/mouse.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        <p>
+            <div id="postre3_2">
+                <input type="checkbox">Flan: Sin huevos añadidos y realizado con leche de almendras y haria de coco, con un toque de vainilla endulzada con miel.
+        </p>
+        <p>
+            <img src="img/vegano/postre/flan.jpg" alt="10px" width="90%">
+        </p>
+        </div>
+        </div>
+        <div id="botonRegular_2">
+            <button type="submit"> <a href="pedidostatus.html">Registre</a></button>
+            <input type="reset" value="Limpiar">
+        </div>
     </form>
 
 </body>
+
 </html>

@@ -40,6 +40,246 @@ header {
     margin-left: auto;
 }
 
+div#entrada {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#entrada1 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#entrada2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#entrada3 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#principal1 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal3 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#postre1 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre3 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#botonRegular {
+    text-align: center;
+}
+
+div.tituloMenu {
+    text-align: center;
+}
+
+div.parrafoMenu {
+    text-align: center;
+}
+
+div#entrada_2 {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#entrada1_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#entrada2_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#entrada3_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal_2 {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#principal1_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal2_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#principal3_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre_2 {
+    margin-top: 0cm;
+    width: 950px;
+    align-content: center;
+}
+
+div#postre1_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre2_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#postre3_2 {
+    float: left;
+    width: 290px;
+    height: 260px;
+    padding: 5px;
+    border-width: thin;
+    border-style: solid;
+    text-align: center;
+}
+
+div#botonRegular_2 {
+    text-align: center;
+}
+
+div.tituloMenu {
+    text-align: center;
+}
+
+div.parrafoMenu {
+    text-align: center;
+}
+
 #container-main h1 {
     font-size: 40px;
     text-shadow: 4px 4px 5px #16a085;
